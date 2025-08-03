@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: left;
+}
+
+.pokemon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  height: 240px;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  color: white;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card .card-header img.pokeball-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.card .types {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.type {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  width: fit-content;
+}
+
+.pokemon-image {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  height: 220px;
+  transition: transform 0.3s ease;
+}
+
+.load-more {
+  margin: 2rem auto;
+  display: block;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .pokemon-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 12px;
+  }
+
+  .card {
+    height: auto;
+    aspect-ratio: 4 / 2.5;
+    padding: 1rem;
+  }
+
+  .pokemon-image {
+    height: 120px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .card .card-header {
+    font-size: 1.2rem;
+  }
+
+  .type {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .load-more {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}
