@@ -1,30 +1,38 @@
-# mtm6302-capstone-your-github-felipeoliveira
-Pokedex
+# MTM6302 Capstone Project – Pokédex App
 
-Name: Felipe Oliveira Barbosa 
-Student Number: 041148179
+## Project Overview
 
-## Prototype Report – Part 3
+This is a fully responsive and interactive Pokédex web application developed as the final stage (Part 4) of the MTM6302 Web Development III Capstone Project.
 
-This is the final version of the Interactive Gallery assignment (Part 3) for the MTM6302 course. The goal of this project is to create a responsive and dynamic image gallery using HTML, CSS, and JavaScript.
+The application allows users to dynamically load Pokémon cards using the Fetch API from an external Pokédex API. Each card displays the Pokémon name, number, types, and an image, and allows user interaction with visual feedback on hover.
 
-## Features
-
-- Dynamic Pokémon cards loaded from the PokéAPI.
-- Responsive layout using CSS Grid.
-- "Load More" button that fetches more Pokémon dynamically.
-- Background color of each card is based on the primary Pokémon type.
-- Hover effects on cards.
-- Captured Pokémon are marked with a Pokéball icon.
-
-## Mobile Version
-
-- Two-column layout for small screens.
-- Optimized image size and spacing for mobile usability.
+---
 
 ## Technologies Used
 
 - HTML5
-- CSS3 (Grid & Media Queries)
-- JavaScript (Fetch API, Event Delegation)
-- PokéAPI (https://pokeapi.co)
+- CSS3 (custom + media queries)
+- JavaScript (ES6+)
+- Fetch API
+- Git & GitHub
+
+---
+
+## Features
+
+- Responsive layout using CSS Grid
+- Asynchronous data fetching using Fetch API
+- Dynamic DOM manipulation
+- Hover animations
+- Mobile-first design
+- No page reload
+- No `var` usage or inline events
+- Pokédex API used for real-time data
+
+---
+
+## File Structure
+index.html
+style.css
+script.js
+README.md
