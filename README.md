@@ -6,16 +6,25 @@ Student Number: 041148179
 
 ## Prototype Report – Part 3
 
-The static prototype was developed using HTML, CSS (Flex/Grid), and JavaScript. The layout closely follows the mockups created in Part 2, including both desktop and mobile versions.
+This is the final version of the Interactive Gallery assignment (Part 3) for the MTM6302 course. The goal of this project is to create a responsive and dynamic image gallery using HTML, CSS, and JavaScript.
 
-Tools & Resources:
-- [PokéAPI](https://pokeapi.co/) – for images
-- Google Fonts – for typography
-- CSS Grid & Flexbox – for responsive layout
+## Features
 
-Challenges:
-- Matching the mobile vs desktop layouts required media queries
-- Maintaining consistent spacing between cards while ensuring flexibility
-- Choosing the right colors to reflect Pokémon types
+- Dynamic Pokémon cards loaded from the PokéAPI.
+- Responsive layout using CSS Grid.
+- "Load More" button that fetches more Pokémon dynamically.
+- Background color of each card is based on the primary Pokémon type.
+- Hover effects on cards.
+- Captured Pokémon are marked with a Pokéball icon.
 
-All code is properly validated using [W3 Validator](https://validator.w3.org/), and follows proper indentation and formatting.
+## Mobile Version
+
+- Two-column layout for small screens.
+- Optimized image size and spacing for mobile usability.
+
+## Technologies Used
+
+- HTML5
+- CSS3 (Grid & Media Queries)
+- JavaScript (Fetch API, Event Delegation)
+- PokéAPI (https://pokeapi.co)
